@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este sitio web abarca tres subtemas esenciales relacionados con el cuidado del medio ambiente, se dan a conocer técnicas, tipso de energías y proyectos sustentables.">
+    <meta name="keywords" content="HTML, CSS, desarrollo web">
+    <meta name="author" content="M6C Hernández Fraga John Joseph">
+	<title>ECO-CONSCIENCIA</title>
+</head>
+
+<style type="text/css">
+	
+	img{width: 100%}
+
+	body
+	{
+	 color: lightgreen;
+     background-image: url("https://img.freepik.com/vector-gratis/fondo-mosaico-verde_1164-836.jpg?t=st=1742252704~exp=1742256304~hmac=c28f814e12afb60da5aa27d62bd5df302b316f1420fcbf42f53759c0290506bc&w=740");
+	 background-attachment: fixed;
+	 background-size: cover;
+	 background-position: center;
+	}
+
+	h1
+	{
+	 font-size: 4.5em;
+	 font-family: Bahnschrift;
+	 color: #053705;
+	}
+
+	h2
+	{
+	 font-size: 1.5em;
+	 font-family: Roboto, sans-serif;
+	 color: lightgreen;
+	}
+
+	h3
+	{
+	 font-size: 2em;
+	 text-align: center;
+	 color: white;
+	 text-shadow: 1px 1px 4px black;
+	 font-family: Roboto, sans-serif;
+	}
+
+	h4
+	{
+	 font-size: 1em;
+	 font-family: Roboto, sans-serif;
+	 color: black;
+	}
+
+	h6
+	{
+	 font-size: 1.2em;
+	 text-align: center;
+	 color: lightgreen;
+	 font-family: Roboto, sans-serif;
+	}
+
+	ul
+	{
+	 display: inline-flex;
+	 color: white;
+	 font-size: 1em;
+	 font-family: Arial;
+	 font-weight: bold;
+	}
+
+	a
+	{
+	 color: white;
+	 text-decoration: none;	
+	}
+
+	a:hover
+	{
+	 color: lightgreen;
+	 text-decoration: underline;
+	}
+
+
+
+	.lineal
+	{
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+	 justify-content: center;
+	 /*border: red 0.313em dotted;*/
+	 margin: 0.188em; /*3px*/	
+	}
+
+	.columna
+	{
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 justify-content: center;
+	 /*border: blue 0.125em dotted;*/
+	 margin: 0.188em; /*3px*/
+	}
+
+
+
+	#menu
+	{
+	 position: fixed;
+	 /*border: blue 2px solid;*/
+	 background-color: #254923;
+	 text-align: center;
+	 margin: 0.313em;
+	 width: 97vw;	
+	}
+
+	#encabezado
+	{
+	 position: static;
+	 /*border: red 2px solid;*/
+	 margin: 0.313em;
+	 padding-top: 1.4em;
+	 text-align: center;
+	}
+
+	#intro
+	{
+	 position: static;
+	 /*border: black 2px solid;*/
+	 background-color: #254923;
+	 text-align: center;
+	 margin: 0.313em;
+	 margin-top: 2em;
+	 margin-bottom: 2em;	
+	}
+
+
+	#bigimg
+	{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	 background-color: #254923;
+	 margin-left: 0.313em;
+	 margin-right: 0.313em;
+	 margin-bottom: 0.313em;
+	 padding: .5em;
+	}
+
+	#pieimg
+	{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	 /*border: black 2px solid;*/
+	 margin-left: 0.313em;
+	 margin-right: 0.313em;
+	 margin-bottom: 2.5em;
+	 
+	}
+
+
+
+	.report1
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://resizer.iproimg.com/unsafe/1280x/filters:format(webp):quality(85)/https://assets.iproup.com/assets/jpg/2020/01/7962.jpg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 45vw;
+	 height: 60vh;
+	 padding: .5em;
+	}
+
+	.report2 
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://ambiancemagazine.mx/wp-content/uploads/2024/03/Zero-waste-ropa-fast-fashion-moda-f.jpg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 45vw;
+	 height: 60vh;
+	 padding: .5em;
+	}
+
+	.report3
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://www.digitalbizmagazine.com/wp-content/uploads/2023/12/db57_Tecnologia-y-sostenibilidad.png");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 45vw;
+	 height: 60vh;
+	 padding: .5em;
+	}
+
+	.report4
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://media.vogue.mx/photos/5e7e952857ec4a00082dad0c/2:3/w_1600,c_limit/Marina%20Testino%20posando%20en%20Nuna%20Swimear%20y%20Anaiss%20Yucra.jpg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 45vw;
+	 height: 60vh;
+	 padding: .5em;
+	}
+
+	#pie
+	{
+	 /*border: black 2px solid;*/
+     background-color: #254923;
+	 margin: 0.313em;	
+	 padding: .5em;
+	 margin-top: 2.5em;
+	 height: 55vh;
+	}
+
+	.pline
+	{
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+	 justify-content: center;
+	 /*border: red 0.313em dotted;*/
+	 margin: 0.188em; /*3px*/
+	 gap: 3em;	
+	}
+
+	.insta
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("instagram.jpeg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 20vw;
+	 height: 30vh;
+	 padding: .5em;
+	}
+
+	.tiktok
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("tiktok.jpeg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 20vw;
+	 height: 30vh;
+	 padding: .5em;
+	}
+
+	.yutu
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("youtube.jpeg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 20vw;
+	 height: 30vh;
+	 padding: .5em;
+	}
+
+</style>
+
+
+<body>
+
+	<div id="menu">
+		<ul><a href="Index PW.html">INICIO</a></ul>
+		<ul><a href="huellac.html">La Huella de Carbono</a></ul>
+		<ul><a href="energias.html">Energías renovables</a></ul>
+		<ul><a href="moda.html">Moda Zero Waste</a></ul>
+	</div>
+
+	<div id="encabezado">
+		<h1>ECO-CONSCIENCIA</h1>
+	</div>
+
+
+	<div id="intro">
+		<h2><p>El medioambiente es el espacio en el que se desarrolla la vida de los distintos organismos favoreciendo su interacción y crecimiento aprovechando los recursos presentes. En él se encuentran tanto seres vivos, como elementos sin vida, y otros creados por la mano del hombre, los cuales forman parte esencial para enriquecer también la biodiversidad</p></h2>
+	</div>
+
+
+	<div class="columna">
+
+		<div id="bigimg">
+			<img src="https://jiffygroup.com/es/wp-content/uploads/2023/06/jiff-jiffygrouplatam-image-914_1a807c5fe21a7f81736c8171bda9dc72_2000.jpeg">
+		</div>
+
+		<div id="pieimg">
+			<h4>Todos los organismos obtienen del medio ambiente todos los elementos que necesitan para vivir: desde el aire y el agua, hasta el refugio y el alimento que les permite crecer, desarrollarse y obtener energía. Mantener el equilibrio del medio ambiente es fundamental para mantener la vida en la Tierra tal como la conocemos.</h4>
+		</div>
+
+	</div>
+
+	<div class="lineal">
+		<div class="columna">
+
+			<div class="report1">
+				<h3><a href="huellac.html#calc">¿Cómo reducir tu huella de carbono y dónde calcularla?</a></h3>
+			</div>
+
+			<div class="report2">
+				<h3><a href="moda.html#latam">Moda Zero Waste en Latinoamérica: un viaje hacia la sostenibilidad</a></h3>
+			</div>
+
+		</div>
+
+
+		<div class="columna">
+
+			<div class="report3">
+				<h3><a href="energias.html#av">Avances en sostenibilidad tecnológica</a></h3>
+			</div>
+
+			<div class="report4">
+				<h3><a href="moda.html#conv">Convocatoria para cero desechos en moda y textiles</a></h3>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="pie">
+		<h6>John Joseph Hernández Fraga on:</h6>
+
+	<div class="pline">
+
+		<div class="insta">
+			<h4><a href="https://www.instagram.com/johnephs/?igsh=MWNoa2cxYmkxaGJpbQ%3D%3D&utm_source=qr#">@johnephs on Instagram</a></h4>
+		</div>
+
+		<div class="tiktok">
+			<h4><a href="https://www.tiktok.com/@johnephs">@johnephs on TikTok</a></h4>
+		</div>
+
+		<div class="yutu">
+			<h4><a href="https://www.youtube.com/@Johnephs">@johnephs on YouTube</a></h4>
+		</div>
+
+	</div>
+
+	</div>
+
+
+</body>
+
+
+</html>
