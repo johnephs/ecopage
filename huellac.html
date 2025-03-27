@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este sitio web abarca tres subtemas esenciales relacionados con el cuidado del medio ambiente, se dan a conocer técnicas, tipso de energías y proyectos sustentables.">
+    <meta name="keywords" content="HTML, CSS, desarrollo web">
+    <meta name="author" content="M6C Hernández Fraga John Joseph">
+	<title>HUELLA DE CARBONO</title>
+</head>
+
+<style type="text/css">
+	
+	img{width: 100%}
+
+	body
+	{
+	 color: lightgreen;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://png.pngtree.com/thumb_back/fh260/background/20231103/pngtree-green-foliage-texture-creating-a-natural-backdrop-image_13740083.png");
+	 background-attachment: fixed;
+	 background-size: cover;
+	 background-position: center;
+	}
+
+	h1
+	{
+	 font-size: 4.5em;
+	 font-family: Roboto, sans-serif;
+	 color: white;
+	 text-shadow:  black 1px 1px 3px;
+	}
+
+	h2
+	{
+	 font-size: 1.5em;
+	 font-family: Roboto, sans-serif;
+	 color: white;
+	}
+
+	h3
+	{
+	 font-size: 2.5em;
+	 text-align: center;
+	 color: lightgreen;
+	 font-family: Roboto, sans-serif;
+	}
+
+	h4
+	{
+	 font-size: 1.1em;
+	 font-family: Roboto, sans-serif;
+	 color: white;
+	 font-weight: normal;
+	}
+
+	h6
+	{
+	 font-size: 1.2em;
+	 text-align: center;
+	 color: lightgreen;
+	 font-family: Roboto, sans-serif;
+	}
+
+	ul
+	{
+	 display: inline-flex;
+	 color: white;
+	 font-size: 1em;
+	 font-family: Arial;
+	 font-weight: bold;
+	}
+
+	ol
+	{
+	 color: white;
+	 font-size: 1em;
+	 font-family: Arial;
+	 font-weight: bold;
+	}
+
+	a
+	{
+	 color: white;
+	 text-decoration: none;	
+	}
+
+	a:hover
+	{
+	 color: lightgreen;
+	 text-decoration: underline;
+	}
+
+	button
+	{
+	 background-color: #09380b;
+	 text-shadow: black 1px 1px 3px;
+	 font-size: 1.5em;
+	 width: 35vw;
+	}
+
+	.lineal
+	{
+	 display: flex;
+	 flex-direction: row;
+	 align-items: left;
+	 justify-content: left;
+	 /*border: red 0.313em dotted;*/
+	 margin: 0.188em; /*3px*/	
+	}
+
+	.columna
+	{
+	 display: flex;
+	 flex-direction: column;
+	 align-items: left;
+	 justify-content: left;
+	 /*border: blue 0.125em dotted;*/
+	 margin: 0.188em; /*3px*/
+	}
+
+	.columnaf /*columna del botón*/
+	{
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 justify-content: center;
+	 /*border: blue 0.125em dotted; /*2px*/
+	 margin: 0.188em; /*3px*/
+	 margin-left: 5em;
+	}
+
+
+
+	#menu
+	{
+	 position: fixed;
+	 /*border: blue 2px solid;*/
+	 background-color: #134007;
+	 text-align: center;
+	 margin: 0.313em;
+	 width: 97vw;	
+	}
+
+	#encabezado
+	{
+	 position: static;
+	 /*border: red 2px solid;*/
+	 margin: 0.313em;
+	 padding-top: 1.4em;
+	 text-align: center;
+	}
+
+	#bigimg img
+	{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	 /*border: white 2px solid;*/
+	 width: 96vw;
+	 height: 60vh;
+	 object-fit: cover;
+	 background: center;
+	 margin: 0.313em;
+	 margin-bottom: 2em;
+	 padding: .3em;
+	}
+
+	.titulos
+	{
+	 display: flex;
+     align-items: left;
+     justify-content: left;
+	/*border: hotpink 2px solid;*/
+	 margin: 0.313em;
+	 padding: 1.5em;
+	 margin-top: 6em;
+	}
+
+	.textoi
+	{
+	 /*border: white 2px solid;*/
+	 margin: 0.313em;
+	 margin-bottom: 2.5em;
+	 padding: 1.5em;	
+	}
+
+	.textom
+	{
+	 /*border: white 2px solid;*/
+	 width: 45vw;
+	 margin: 0.313em;
+	 margin-bottom: 2.5em;	
+	 margin-left: 2em;
+	 padding: 1.5em;
+	 
+	}
+
+	.textox
+	{
+	 /*border: white 2px solid;*/
+	 width: 65vw;
+	 margin: 0.313em;
+	 margin-bottom: 2.5em;	
+	 text-align: left;
+	 padding: 1.5em;
+	}
+
+	.textoy
+	{
+	 /*border: white 2px solid;*/
+	 width: 94vw;
+	 margin: 0.313em;
+	 margin-bottom: 2.5em;	
+	 text-align: left;
+	 padding: 1.5em;
+	}
+
+	.imgs img
+	{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	 /*border: purple 4px solid;*/
+	 width: 60;
+	 height: 55vh;
+	 object-fit: cover;
+	 background: center;
+	 margin: 0.313em;
+	 margin-bottom: 2em;
+	}
+
+	.imgv img
+	{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	 /*border: purple 4px solid;*/
+	 width: 25vw;
+	 height: 35vh;
+	 object-fit: cover;
+	 background: center;
+	 margin: 0.313em;
+	 margin-bottom: 2em;
+	}
+
+	.imgf img
+	{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	 /*border: pink 4px solid;*/
+	 width: 35vw;
+	 height: 65vh;
+	 object-fit: cover;
+	 background: center;
+	 margin: 0.313em;
+	 margin-bottom: 2em;
+	}
+
+	#pie
+	{
+	 /*border: black 2px solid;*/
+     background-color: #134007;
+	 margin: 0.313em;	
+	 padding: .5em;
+	 margin-top: 2.5em;
+	 height: 55vh;
+	}
+
+	.pline
+	{
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+	 justify-content: center;
+	 /*border: red 0.313em dotted;*/
+	 margin: 0.188em; /*3px*/
+	 gap: 3em;	
+	}
+
+	.insta
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("instagram.jpeg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 20vw;
+	 height: 30vh;
+	 padding: .5em;
+	}
+
+	.tiktok
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("tiktok.jpeg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 20vw;
+	 height: 30vh;
+	 padding: .5em;
+	}
+
+	.yutu
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("youtube.jpeg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 20vw;
+	 height: 30vh;
+	 padding: .5em;
+	}
+
+
+</style>
+
+<body>
+
+	<div id="menu">
+		<ul><a href="Index PW.html">INICIO</a></ul>
+		<ul><a href="huellac.html">La Huella de Carbono</a></ul>
+		<ul><a href="energias.html">Energías renovables</a></ul>
+		<ul><a href="moda.html">Moda Zero Waste</a></ul>
+	</div>
+
+	<div id="encabezado">
+		<h1>LA HUELLA DE CARBONO</h1>
+	</div>
+
+	<div id="bigimg">
+		<img src="https://www.iberdrola.com/documents/20125/40513/huella-de-carbono-746x419.jpg/f61f98a2-7c51-27f9-31d2-41b1dafe6bf7?t=1738248418273">
+	</div>
+
+	<div class="columna">
+
+		<div class="columna">
+
+			<div class="titulos">
+				<h3>¿Qué es la huella de carbono?</h3>
+			</div>
+
+			<div class="textoi">
+				<h4><p>Para entender que es la huella de carbono, es necesario conocer primero qué es lo que la causa, es decir, los gases de fecto invernadero. Estos son sustancias gaseosas que se encuentran en la atmósfera y tienen la capacidad de atrapar el calor del sol, contribuyendo al fenómeno conocido como efecto invernadero.</p>
+
+				<p>Este efecto es un proceso natural que permite que la Tierra mantenga una temperatura adecuada para la vida. Sin embargo, cuando estos gases aumentan en exceso debido a actividades humanas, pueden causar un calentamiento global y alterar el clima del planeta.</p></h4>
+			</div>
+
+		</div>
+
+		<div class="lineal">
+
+			<div class="imgs">
+				<img src="https://www.eurofins-environment.es/wp-content/uploads/2021/12/como-reducir-la-huella-de-carbono.jpg">
+			</div>
+
+			<div class="textom">
+				<h4><p>Entonces, la huella de carbono es un indicador que mide la cantidad total de gases de efecto invernadero (GEI), especialmente dióxido de carbono (CO₂), emitidos como resultado de las actividades humanas. Estas emisiones provienen de diversas fuentes, como el uso de combustibles fósiles en la industria, el transporte, la producción de energía y la agricultura, entre otras. Reducir nuestra huella de carbono es una de las acciones más importantes que podemos tomar para mitigar el cambio climático y proteger el medio ambiente.</p>
+
+				
+
+				<p>Cada acción que realizamos, desde la fabricación de productos hasta el simple hecho de viajar en automóvil, contribuye a la generación de gases que afectan al medio ambiente. La huella de carbono nos permite conocer el impacto ambiental de nuestras actividades y tomar decisiones informadas para reducir nuestra contribución al cambio climático.</p></h4>
+			</div>
+
+		</div>
+
+	</div>
+
+		<div class="titulos">
+			<h3>Factores afectan la huella de carbono</h3>
+		</div>
+
+<div class="columna">
+		<div class="lineal">
+			<div class="textox">
+					<h2>FAMILIA</h2>
+					<h4><p>Según Conservation International, el número de hijos es el factor que más impacta en tu huella de carbono. De acuerdo con esta organización, cada hijo que añades a tu familia genera, en promedio, 58 toneladas de CO2 equivalente al año. Este impacto supera al de otros hábitos o decisiones individuales, subrayando la importancia de considerar el tamaño de la familia en el contexto de la sostenibilidad ambiental.</p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://bloque10.unimagdalena.edu.co/wp-content/uploads/2024/03/happy-family-1.jpg">
+			</div>
+		</div>
+
+
+		<div class="lineal">
+			<div class="textox">
+					<h2>TRANSPORTE</h2>
+					<h4><p>Los automóviles y los aviones son dos de los factores que más contribuyen a la huella de carbono personal. Los propietarios que usan regularmente su coche generan, en promedio, 2,4 toneladas de CO2 al año. Por otro lado, un solo vuelo transatlántico tiene un impacto significativo, añadiendo alrededor de 1,6 toneladas de CO2.</p>
+
+					<p>Reducir estas emisiones implica adoptar hábitos más sostenibles, como priorizar el transporte público, compartir vehículos o utilizar bicicletas para trayectos cortos.</p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://www.eluniversal.com.mx/resizer/v2/OFVFVDL7JNB5PESXW4HPS6VARA.jpg?auth=7f257d6a337f0d870a850f13fcbacd9161379a93229aee5f859b09ba6a97afd7">
+			</div>
+		</div>
+
+
+		<div class="lineal">
+			<div class="textox">
+					<h2>CALEFACCIÓN</h2>
+					<h4><p>Si dependes regularmente de sistemas de calefacción o aire acondicionado según la estación, es probable que estés añadiendo unas 1,5 toneladas de CO2 equivalente a tu huella anual. Este impacto es especialmente alto si la energía que consumes proviene de fuentes "sucias" como el carbón o el gas, en lugar de energías renovables.</p>
+					<p> Además, la eficiencia del aislamiento en los hogares y el tipo de sistema utilizado juegan un papel crucial en el nivel de emisiones.</p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://www.hubinmobiliario.net/uploads/blog/1670258200.png">
+			</div>
+		</div>
+
+
+		<div class="lineal">
+			<div class="textox">
+					<h2>ALIMENTACIÓN</h2>
+					<h4><p>Comer carne contribuye con aproximadamente 0,8 toneladas de CO2 equivalente a tu huella de carbono anual. Esto se debe, en parte, a las emisiones de metano generadas por el proceso digestivo de los animales. Sin embargo, la mayor parte del impacto proviene de la energía requerida para cultivar, cosechar y procesar los cultivos que sirven como alimento para el ganado.</p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://www.fao.org/images/rlclibraries/news/organic-food-for-healthy-nutrition-and-superfoods-epfyh7j.jpg?sfvrsn=d7270160_2">
+			</div>
+		</div>
+</div>
+
+		<div class="titulos" id="calc">
+			<h3>¿Cómo reducir tu huella de carbono y dónde calcularla?</h3>
+		</div>
+
+		<div class="textoy">
+			<h4><p>A medida que el mundo enfrenta los efectos negativos del calentamiento global, es esencial que cada individuo y comunidad asuma su responsabilidad y busque maneras de reducir su impacto. Desde pequeños cambios en nuestra rutina diaria, como optar por el transporte público o consumir productos locales, hasta decisiones más amplias, como adoptar energías renovables o modificar nuestros hábitos de consumo, existen numerosas estrategias que pueden ayudar a disminuir nuestra huella:</p></h4>
+		</div>
+
+<div class="lineal">
+
+	<div class="columna">
+		<div>
+			<ol>
+				<li>Usa transporte público, bicicleta o camina siempre que sea posible.</li>
+				<br></br>
+				<li>Mantén tu coche en buen estado para mejorar su eficiencia </li>
+				<br></br>
+				<li>Programa la calefacción y el aire acondicionado para optimizar el consumo.</li>
+				<br></br>
+				<li>Apaga luces y electrodomésticos cuando no los uses.</li>
+				<br></br>
+				<li>Evita el desperdicio de alimentos: planifica tus compras y reutiliza sobras.</li>
+				<br></br>
+				<li>Compra menos y prioriza productos duraderos y de calidad.</li>
+				<br></br>
+				<li>Prefiere ropa de segunda mano o de marcas sostenibles.</li>
+				<br></br>
+				<li>Repara en lugar de reemplazar cuando sea posible.</li>
+				<br></br>
+				<li>Reduce, reutiliza y recicla: aplica la regla de las 3R.</li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="columnaf">
+		<div class="imgf">
+			<img src="https://plazachimalhuacan.mx/wp-content/uploads/2024/10/que-herramientas-existen-para-calcular-huella-de-carbono.png">
+		</div>
+
+		<button><a href="https://consumoresponsable.greenpeace.org.mx/calcula-tu-huella-de-carbono">CONOCE TU HUELLA DE CARBONO AQUÍ</a></button>
+	</div>
+</div>
+
+
+	<div id="pie">
+		<h6>John Joseph Hernández Fraga on:</h6>
+
+	<div class="pline">
+
+		<div class="insta">
+			<h4><a href="https://www.instagram.com/johnephs/?igsh=MWNoa2cxYmkxaGJpbQ%3D%3D&utm_source=qr#">@johnephs on Instagram</a></h4>
+		</div>
+
+		<div class="tiktok">
+			<h4><a href="https://www.tiktok.com/@johnephs">@johnephs on TikTok</a></h4>
+		</div>
+
+		<div class="yutu">
+			<h4><a href="https://www.youtube.com/@Johnephs">@johnephs on YouTube</a></h4>
+		</div>
+
+	</div>
+
+	</div>
+
+</body>
+
+</html>

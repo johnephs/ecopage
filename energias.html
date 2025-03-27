@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este sitio web abarca tres subtemas esenciales relacionados con el cuidado del medio ambiente, se dan a conocer técnicas, tipso de energías y proyectos sustentables.">
+    <meta name="keywords" content="HTML, CSS, desarrollo web">
+    <meta name="author" content="M6C Hernández Fraga John Joseph">
+	<title>ENERGÍAS RENOVABLES</title>
+</head>
+
+<style type="text/css">
+	
+	img{width: 100%}
+
+	body
+	{
+	 color: lightskyblue;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://img.freepik.com/foto-gratis/cielo-nubes-blancas_23-2148824914.jpg");
+	 background-attachment: fixed;
+	 background-size: cover;
+	 background-position: center;
+	}
+
+	h1
+	{
+	 font-size: 4.5em;
+	 font-family: Roboto, sans-serif;
+	 color: white;
+	 text-shadow:  black 1px 1px 3px;
+	}
+
+	h2
+	{
+	 font-size: 1.5em;
+	 font-family: Roboto, sans-serif;
+	 color: white;
+	}
+
+	h3
+	{
+	 font-size: 2.5em;
+	 text-align: center;
+	 color: lightskyblue;
+	 font-family: Roboto, sans-serif;
+	}
+
+	h4
+	{
+	 font-size: 1.1em;
+	 font-family: Roboto, sans-serif;
+	 color: white;
+	 font-weight: normal;
+	}
+
+	h5
+	{
+	 font-size: 1.5em;
+	 font-family: Roboto, sans-serif;
+	 color: white;
+	 text-align: left;
+	 font-weight: bold;
+	}
+
+	h6
+	{
+	 font-size: 1.2em;
+	 text-align: center;
+	 color: lightskyblue;
+	 font-family: Roboto, sans-serif;
+	}
+
+	ul
+	{
+	 display: inline-flex;
+	 color: white;
+	 font-size: 1em;
+	 font-family: Arial;
+	 font-weight: bold;
+	}
+
+	a
+	{
+	 color: white;
+	 text-decoration: none;	
+	}
+
+	a:hover
+	{
+	 color: lightblue;
+	 text-decoration: underline;
+	}
+
+
+
+	.lineal
+	{
+	 display: flex;
+	 flex-direction: row;
+	 align-items: left;
+	 justify-content: left;
+	 /*border: red 0.313em dotted;*/
+	 margin: 0.188em; /*3px*/	
+	}
+
+	.columna
+	{
+	 display: flex;
+	 flex-direction: column;
+	 align-items: left;
+	 justify-content: left;
+	 /*border: blue 0.125em dotted; /*2px*/
+	 margin: 0.188em; /*3px*/
+	}
+
+
+
+	#menu
+	{
+	 position: fixed;
+	 /*border: blue 2px solid;*/
+	 background-color: #093172;
+	 text-align: center;
+	 margin: 0.313em;
+	 width: 97vw;	
+	}
+
+	#encabezado
+	{
+	 position: static;
+	 /*border: red 2px solid;*/
+	 margin: 0.313em;
+	 padding-top: 1.4em;
+	 text-align: center;
+	}
+
+	#bigimg img
+	{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	 /*border: white 2px solid;*/
+	 width: 96vw;
+	 height: 60vh;
+	 object-fit: cover;
+	 background: center;
+	 margin: 0.313em;
+	 margin-bottom: 2em;
+	 padding: .3em;
+	}
+
+	.titulos
+	{
+	 display: flex;
+     align-items: left;
+     justify-content: left;
+	 /*border: hotpink 2px solid;*/
+	 margin: 0.313em;
+	 padding: 1.5em;
+	 margin-top: 6em;
+	}
+
+	.textoi
+	{
+	 /*border: white 2px solid;*/
+	 margin: 0.313em;
+	 margin-bottom: 2.5em;	
+	 padding: 1.5em;
+	}
+
+	.textom
+	{
+	 /*border: white 2px solid;*/
+	 width: 45vw;
+	 margin: 0.313em;
+	 padding: 1.5em;
+	}
+
+	.textoinfo
+	{
+	 /*border: white 2px solid;*/
+	 width: 30;
+	 margin: 0.313em;
+	 padding: 1.5em;
+	 font-size: 0.9em;
+	}
+
+	.textox
+	{
+	 /*border: white 2px solid;*/
+	 width: 65vw;
+	 margin: 0.313em;
+	 margin-bottom: 2.5em;	
+	 text-align: left;
+	 padding: 1.5em;
+	}
+
+	.imgs img
+	{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	 /*border: purple 4px solid;*/
+	 width: 45vw;
+	 height: 55vh;
+	 object-fit: cover;
+	 background: center;
+	 margin: 0.313em;
+	 margin-bottom: 2em;
+	}
+
+	.imgv img
+	{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	 /*border: purple 4px solid;*/
+	 width: 25vw;
+	 height: 35vh;
+	 object-fit: cover;
+	 background: center;
+	 margin: 0.313em;
+	 margin-bottom: 2em;
+	}
+
+	#pie
+	{
+	 /*border: black 2px solid;*/
+     background-color: #093172;
+	 margin: 0.313em;	
+	 padding: .5em;
+	 margin-top: 2.5em;
+	 height: 55vh;
+	}
+
+	.pline
+	{
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+	 justify-content: center;
+	 /*border: red 0.313em dotted;*/
+	 margin: 0.188em; /*3px*/
+	 gap: 3em;	
+	}
+
+	.insta
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("instagram.jpeg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 20vw;
+	 height: 30vh;
+	 padding: .5em;
+	}
+
+	.tiktok
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("tiktok.jpeg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 20vw;
+	 height: 30vh;
+	 padding: .5em;
+	}
+
+	.yutu
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("youtube.jpeg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 20vw;
+	 height: 30vh;
+	 padding: .5em;
+	}
+
+	.info img
+	{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	 border: lightskyblue 4px solid;
+	 width: 60vw;
+	 height: 150vh;
+	 background-size: cover;
+     background-position: center;
+	 margin: 0.313em;
+	 margin-bottom: 2em;
+	}
+
+</style>
+
+<body>
+
+	<div id="menu">
+		<ul><a href="Index PW.html">INICIO</a></ul>
+		<ul><a href="huellac.html">La Huella de Carbono</a></ul>
+		<ul><a href="energias.html">Energías renovables</a></ul>
+		<ul><a href="moda.html">Moda Zero Waste</a></ul>
+	</div>
+
+	<div id="encabezado">
+		<h1>ENERGÍAS RENOVABLES</h1>
+	</div>
+
+	<div id="bigimg">
+		<img src="https://jom.es/wp-content/uploads/energias-renovables.-tres-paises-lideres.jpg">
+	</div>
+
+	<div class="columna">
+
+		<div class="columna">
+
+			<div class="titulos">
+				<h3>¿Qué son las energías renovables?</h3>
+			</div>
+
+			<div class="textoi">
+				<h4><p>En un mundo donde la crisis climática es una preocupación creciente, la búsqueda de alternativas energéticas sostenibles se ha vuelto esencial. Las energías renovables representan una solución clave para reducir la dependencia de los combustibles fósiles, disminuir las emisiones de gases de efecto invernadero y garantizar un suministro energético más limpio y eficiente.</p>
+
+				<p>Gracias a los avances tecnológicos, estas fuentes de energía no solo son más accesibles, sino que también permiten un desarrollo más responsable con el medio ambiente.</p></h4>
+			</div>
+
+		</div>
+
+		<div class="lineal">
+
+			<div class="imgs">
+				<img src="https://itpe.mx/wp-content/uploads/2020/02/energias_renovables_ventajas_y_desventajas_3571_orig.jpg">
+			</div>
+
+			<div class="textom">
+				<h4><p>Las energías renovables se obtienen de recursos naturales inagotables, como el sol, el viento, el agua y el calor de la Tierra. A diferencia de las fuentes convencionales, no generan residuos contaminantes ni contribuyen al agotamiento de los ecosistemas. Tecnologías como la energía solar, eólica, hidroeléctrica y geotérmica están revolucionando la forma en que producimos y consumimos electricidad, impulsando un modelo energético más sostenible y resiliente para las generaciones futuras.</p>
+
+				<p>Además, el uso de estas fuentes de energía reduce la dependencia de los combustibles fósiles, contribuyendo significativamente a la lucha contra el cambio climático y promoviendo la reducción de las emisiones de gases de efecto invernadero. La integración de estas energías en las redes eléctricas también fomenta la creación de empleo en sectores innovadores, mientras que el avance de las tecnologías de almacenamiento y distribución mejora la eficiencia y accesibilidad de estas energías en todo el mundo.</p></h4>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="titulos">
+			<h3>Tipos de Energías Renovables</h3>
+	</div>
+
+	<div class="lineal">
+		<div class="info">
+			<img src="info.jpg">
+		</div>
+
+		<div class="columna">
+				<div class="textoinfo">
+							<h2>ENERGÍA SOLAR</h2>
+							<h4><p>De todas las fuentes de energía, la energía solar es la que más abunda y, además, también puede obtenerse aún con el cielo nublado. La velocidad a la que la Tierra intercepta la energía solar es aproximadamente 10 000 veces superior a la velocidad con la que la humanidad consume la energía.</p></h4>
+				</div>
+
+				<div class="textoinfo">
+							<h2>ENERGÍA EÓLICA</h2>
+							<h4><p>La energía eólica aprovecha la energía cinética del aire en movimiento gracias al uso de enormes turbinas eólicas ubicadas en superficies terrestres, en alta mar o en aguas dulces (sobre la superficie acuática). </p></h4>
+				</div>
+
+				<div class="textoinfo">
+							<h2>ENERGÍA HIDRÁULICA</h2>
+							<h4><p>La energía hidroeléctrica supone en la actualidad la mayor fuente de energía renovable dentro del sector de la electricidad. Se basa en patrones generalmente estables de pluviosidad y puede verse negativamente afectada por sequías causadas por el cambio climático.</p></h4>
+				</div>
+
+				<div class="textoinfo">
+							<h2>ENERGÍA GEOTÉRMICA</h2>
+							<h4><p>La energía geotérmica utiliza la energía térmica disponible del interior de la Tierra. El calor se extrae de unos depósitos geotérmicos a través de pozos u otros medios llamados depósitos hidrotermales.</p></h4>
+				</div>
+
+				<div class="textoinfo">
+							<h2>BIOENERGÍA</h2>
+							<h4><p>La energía creada a partir de la quema de biomasa forma emisiones de gases con efecto invernadero, aunque a niveles más bajos que la combustión de los carburantes fósiles, como pueden ser el carbón, el petróleo o el gas.</p></h4>
+				</div>
+		</div>
+	</div>
+
+
+	<div class="titulos" id="av">
+			<h3>Avances en la tecnología sostenible</h3>
+	</div>
+
+
+	<div class="textoi">
+		<h4><p>La tecnología sustentable es aquella que busca reducir la huella de carbono y mejorar la calidad de vida al mismo tiempo. La tecnología sostenible se refiere a la adopción de soluciones ambientalmente responsables para satisfacer las necesidades de la humanidad sin comprometer el equilibrio ecológico y los ecosistemas naturales. Esto significa promover el uso de energías renovables, desarrollar procesos industriales eficientes en términos de recursos y optimizar los materiales para reducir el daño medioambiental.</p>
+
+		<p>Para el logro de cada uno de los objetivos que posibilitan un entorno verde, las tecnologías informáticas ocupan un lugar central. En la medida en que permiten gestionar los avances en un entorno que se ajusta a las necesidades reales de la empresa. La innovación tecnológica por sí sola no será suficiente, a menos que se integre en un sistema general de optimización de recursos.</h4></p>
+
+		<p><h5>Existen 12 tecnologías con efectos verdes que podemos ver actuando durante los próximos años:</h5></p>
+	</div>
+
+<div class="columna">
+		<div class="lineal">
+			<div class="textox">
+					<h2>Tecnología informática</h2>
+					<h4><p>Los sistemas informáticos permiten un mejor monitoreo de la eficiencia operativa de las empresas, lo que ayuda a identificar los puntos clave que inciden en la huella de carbono, o el volumen de emisión de gases de efecto invernadero. Esta mayor eficiencia en las operaciones significa menores gastos, contribuyendo a un mejor uso de los recursos disponibles.</p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://revistasumma.com/wp-content/uploads/2020/10/tecnologia-verde.png">
+			</div>
+		</div>
+
+
+		<div class="lineal">
+			<div class="textox">
+					<h2>Empresas sostenibles</h2>
+					<h4><p>La economía sostenible ya no es opción para ganar popularidad plantando árboles. Actualmente es una necesidad para aumentar ganancias. Las empresas sustentables destacan por ofrecer productos y servicios innovadores que minimizan el impacto ambiental mientras maximizan la rentabilidad de sus negocios.</p>
+
+					<p>El transporte es uno de los principales factores que causan el efecto invernadero, por la emisión de gases de los combustibles fósiles. Su reemplazo por sistemas eléctricos significa un avance importante.</p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://doinglobal.com/wp-content/uploads/2023/08/empresas-sostenibles-scaled.jpg">
+			</div>
+		</div>
+
+
+		<div class="lineal">
+			<div class="textox">
+					<h2>Transporte eléctrico</h2>
+					<h4><p>El desarrollo de la tecnología y baterías más eficientes permite el uso de motores eléctricos en todos los sistemas de transporte, desde automóviles hasta aviones, incluyendo bicicletas, autobuses o scooters.</p>
+
+					<p>El transporte es uno de los principales factores que causan el efecto invernadero, por la emisión de gases de los combustibles fósiles. Su reemplazo por sistemas eléctricos significa un avance importante.</p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://www.rtp.cdmx.gob.mx/storage/app/uploads/public/670/401/af4/670401af4c3e1749991158.jpeg">
+			</div>
+		</div>
+
+
+		<div class="lineal">
+			<div class="textox">
+					<h2>Paneles solares transparentes</h2>
+					<h4><p>Uso extendido de la tecnología de paneles colectores de energía solar en vidrios convencionales. Con la aplicación de una delgada capa transparente, cualquier superficie puede convertirse en un sistema para captar energía del sol. Esta tecnología, que se aplicará en 2023, promete ser una revolución en el uso de la energía solar, a un costo menor que el actual.</p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://static.plataformatierra.es/strapi-uploads/assets/web_agricultura_paneles_solares_1b41d65cec.png">
+			</div>
+		</div>
+
+		<div class="lineal">
+			<div class="textox">
+					<h2>Tecnología de comunicaciones 5G</h2>
+					<h4><p>Se le llama tecnología 5G a la nueva generación de conexiones ultra rápidas con mayor capacidad de conexión inalámbrica. Se basa en el uso de microondas capaces de transmitir información a mayor velocidad, con beneficios inmediatos en toda clase de dispositivos. Sus efectos serán dramáticos en la eficiencia de sistemas informáticos, en redes y en el uso de la nube de Internet.</p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://www.telefonica.com/es/wp-content/uploads/sites/4/2022/07/que-es-el-5g.jpg">
+			</div>
+		</div>
+
+		<div class="lineal">
+			<div class="textox">
+					<h2>Agricultura inteligente</h2>
+					<h4><p>El uso de recursos informáticos tales como el análisis de datos, internet de las cosas o la nube permite hacer más eficiente el aprovechamiento de los recursos agrícolas, evitando la destrucción ecológica. Se suma a otras opciones como cultivos asociados para emplear mejor el terreno o cultivos verticales, esto ayuda a aprovechar la temporada y los recursos y condiciones del entorno </p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://freeeway.com/wp-content/uploads/2023/04/IoT-in-agriculture-%E2%80%93-6-smart-farming-examples-1.png">
+			</div>
+		</div>
+
+
+</div>
+
+
+
+
+
+
+
+	<div id="pie">
+		<h6>John Joseph Hernández Fraga on:</h6>
+
+		<div class="pline">
+
+			<div class="insta">
+				<h4><a href="https://www.instagram.com/johnephs/?igsh=MWNoa2cxYmkxaGJpbQ%3D%3D&utm_source=qr#">@johnephs on Instagram</a></h4>
+			</div>
+
+			<div class="tiktok">
+				<h4><a href="https://www.tiktok.com/@johnephs">@johnephs on TikTok</a></h4>
+			</div>
+
+			<div class="yutu">
+				<h4><a href="https://www.youtube.com/@Johnephs">@johnephs on YouTube</a></h4>
+			</div>
+
+		</div>
+
+	</div>
+
+
+</body>
+
+</html>

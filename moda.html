@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este sitio web abarca tres subtemas esenciales relacionados con el cuidado del medio ambiente, se dan a conocer técnicas, tipso de energías y proyectos sustentables.">
+    <meta name="keywords" content="HTML, CSS, desarrollo web">
+    <meta name="author" content="M6C Hernández Fraga John Joseph">
+	<title>ZERO WASTE</title>
+</head>
+
+<style type="text/css">
+	
+	img{width: 100%}
+
+	body
+	{
+	 color: #ffc395;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://thumbs.dreamstime.com/b/fondo-de-madera-textura-corteza-%C3%A1rbol-antiguo-color-marr%C3%B3n-natural-vertical-hermoso-210258004.jpg");
+	 background-attachment: fixed;
+	 background-size: cover;
+	 background-position: center;
+	}
+
+	h1
+	{
+	 font-size: 4.5em;
+	 font-family: Roboto, sans-serif;
+	 color: white;
+	 text-shadow:  black 1px 1px 3px;
+	}
+
+	h2
+	{
+	 font-size: 1.5em;
+	 font-family: Roboto, sans-serif;
+	}
+
+	h3
+	{
+	 font-size: 2.5em;
+	 text-align: center;
+	 color: #ffc395;
+	 font-family: Roboto, sans-serif;
+	}
+
+	h4
+	{
+	 font-size: 1.1em;
+	 font-family: Roboto, sans-serif;
+	 color: white;
+	 font-weight: normal;
+	}
+
+	h6
+	{
+	 font-size: 1.2em;
+	 text-align: center;
+	 color: #ffc395;
+	 font-family: Roboto, sans-serif;
+	}
+
+	ul
+	{
+	 display: inline-flex;
+	 color: white;
+	 font-size: 1em;
+	 font-family: Arial;
+	 font-weight: bold;
+	}
+
+	a
+	{
+	 color: white;
+	 text-decoration: none;	
+	}
+
+	a:hover
+	{
+	 color: #ffa895;
+	 text-decoration: underline;
+	}
+
+
+
+	.lineal
+	{
+	 display: flex;
+	 flex-direction: row;
+	 align-items: left;
+	 justify-content: left;
+	 /*border: red 0.313em dotted; /*5px*/
+	 margin: 0.188em; /*3px*/	
+	}
+
+	.columna
+	{
+	 display: flex;
+	 flex-direction: column;
+	 align-items: left;
+	 justify-content: left;
+	 /*border: blue 0.125em dotted; /*2px*/
+	 margin: 0.188em; /*3px*/
+	}
+
+
+
+	#menu
+	{
+	 position: fixed;
+	 /*border: blue 2px solid;*/
+	 background-color: #480e03;
+	 text-align: center;
+	 margin: 0.313em;
+	 width: 97vw;	
+	}
+
+	#encabezado
+	{
+	 position: static;
+	 /*border: red 2px solid;*/
+	 margin: 0.313em;
+	 padding-top: 1.4em;
+	 text-align: center;
+	}
+
+	#bigimg img
+	{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	 /*border: white 2px solid;*/
+	 width: 96vw;
+	 height: 60vh;
+	 object-fit: cover;
+	 background: center;
+	 margin: 0.313em;
+	 margin-bottom: 2em;
+	 padding: .3em;
+	}
+
+	.titulos
+	{
+	 display: flex;
+     align-items: left;
+     justify-content: left;
+	 /*border: hotpink 2px solid;*/
+	 margin: 0.313em;
+	 padding: 1.5em;
+	 margin-top: 6em;
+	}
+
+	.textoi
+	{
+	 /*border: white 2px solid;*/
+	 margin: 0.313em;
+	 margin-bottom: 2.5em;	
+	 padding: 1.5em;
+	}
+
+	.textom
+	{
+	 /*border: white 2px solid;*/
+	 width: 45vw;
+	 margin: 0.313em;
+	 margin-bottom: 2.5em;	
+	 margin-left: 2em;
+	 padding: 1.5em;
+	}
+
+	.textox
+	{
+	 /*border: white 2px solid;*/
+	 width: 65vw;
+	 margin: 0.313em;
+	 margin-bottom: 2.5em;	
+	 text-align: left;
+	 padding: 1.5em;
+	 font-size: 1.2em;
+	}
+
+	.imgs img
+	{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	 /*border: purple 4px solid;*/
+	 width: 45vw;
+	 height: 55vh;
+	 object-fit: cover;
+	 background: center;
+	 margin: 0.313em;
+	 margin-bottom: 2em;
+	}
+
+	.imgv img
+	{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	 /*border: purple 4px solid;*/
+	 width: 25vw;
+	 height: 55vh;
+	 object-fit: cover;
+	 object-position: center;
+	 background: center;
+	 margin: 0.313em;
+	 margin-bottom: 2em;
+	}
+
+	#pie
+	{
+	 /*border: black 2px solid;*/
+     background-color: #480e03;
+	 margin: 0.313em;	
+	 padding: .5em;
+	 margin-top: 2.5em;
+	 height: 55vh;
+	}
+
+	.pline
+	{
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+	 justify-content: center;
+	 /*border: red 0.313em dotted;*/
+	 margin: 0.188em; /*3px*/
+	 gap: 3em;	
+	}
+
+	.insta
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("instagram.jpeg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 20vw;
+	 height: 30vh;
+	 padding: .5em;
+	}
+
+	.tiktok
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("tiktok.jpeg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 20vw;
+	 height: 30vh;
+	 padding: .5em;
+	}
+
+	.yutu
+	{
+     /*border: black 2px solid;*/
+     color: black;
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("youtube.jpeg");
+     background-size: cover;
+     background-position: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+	 margin: 5px;	
+	 width: 20vw;
+	 height: 30vh;
+	 padding: .5em;
+	}
+
+</style>
+
+<body>
+
+	<div id="menu">
+		<ul><a href="Index PW.html">INICIO</a></ul>
+		<ul><a href="huellac.html">La Huella de Carbono</a></ul>
+		<ul><a href="energias.html">Energías renovables</a></ul>
+		<ul><a href="moda.html">Moda Zero Waste</a></ul>
+	</div>
+
+	<div id="encabezado">
+		<h1>MODA ZERO WASTE</h1>
+	</div>
+
+	<div id="bigimg">
+		<img src="https://i.ytimg.com/vi/SoW8Gguiyag/maxresdefault.jpg">
+	</div>
+
+	<div class="columna">
+
+		<div class="columna">
+
+			<div class="titulos">
+				<h3>¿Qué es la moda Zero - Waste?</h3>
+			</div>
+
+			<div class="textoi">
+				<h4><p>
+				La industria de la moda es una de las más contaminantes del mundo, generando toneladas de residuos textiles y un alto consumo de recursos naturales. Ante esta problemática, surge la moda Zero Waste, un enfoque que busca transformar la forma en que diseñamos, producimos y consumimos ropa. Más que una tendencia, es un compromiso con el planeta, promoviendo alternativas responsables que reducen el desperdicio sin sacrificar la creatividad ni el estilo.</p>
+
+				<p>A través de técnicas innovadoras, materiales sostenibles y un enfoque en la reutilización, esta filosofía busca reducir el desperdicio textil y promover una industria más ética y responsable.</p></h4>
+			</div>
+
+		</div>
+
+		<div class="lineal">
+
+			<div class="imgs">
+				<img src="https://media.gq.com.mx/photos/6148c401682afc1f2f9a5180/master/pass/reciclaje.jpg">
+			</div>
+
+			<div class="textom">
+				<h4><p>La moda Zero Waste se basa en técnicas que minimizan la generación de residuos en cada etapa del proceso textil. Desde el diseño de patrones que aprovechan al máximo la tela hasta la reutilización de materiales y la producción bajo demanda, este modelo propone una moda sin desperdicio. Además, impulsa el uso de fibras recicladas, biodegradables y procesos éticos, fomentando un consumo más consciente y una industria más circular.</p>
+
+				<p>Cada acción que realizamos, desde la fabricación de productos hasta el simple hecho de viajar en automóvil, contribuye a la generación de gases que afectan al medio ambiente. La huella de carbono nos permite conocer el impacto ambiental de nuestras actividades y tomar decisiones informadas para reducir nuestra contribución al cambio climático.</p></h4>
+			</div>
+
+		</div>
+
+	</div>
+
+		<div class="titulos" id="latam">
+			<h3>Moda Zero Waste en Latinoamérica: un viaje hacia la sostenibilidad</h3>
+	</div>
+
+
+	<div class="textoi">
+		<h4><p>En Latinoamérica, un movimiento de marcas de moda sostenible está floreciendo, impulsado por la filosofía Zero Waste. Estas marcas no sólo se preocupan por la estética, sino también por el impacto ambiental y social de la industria.</p>
+	</div>
+
+<div class="columna">
+		<div class="lineal">
+			<div class="textox">
+					<h2>Eilean Brand (México)</h2>
+					<h4><p>Esta marca crea colecciones atemporales con textiles de bajo impacto y técnicas de patronaje Zero Waste. Su colección cápsula Hacemos más, con menos ofrece 7 prendas con más de 21 combinaciones posibles, minimizando el desperdicio textil.</p>
+
+					<p>Promueve la moda lenta (slow fashion), priorizando la calidad sobre la cantidad y reduciendo el desperdicio textil.Además trabaja bajo estándares éticos, asegurando condiciones laborales justas y procesos de producción responsables.</p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://media.vogue.mx/photos/5ed6de5109f766262480a68e/1:1/w_1820,h_1820,c_limit/eilean-brand.jpg">
+			</div>
+		</div>
+
+
+		<div class="lineal">
+			<div class="textox">
+					<h2>Manto (Argentina)</h2>
+					<h4><p>Manto trabaja con artesanos locales para crear abrigos y piezas únicas en fibras naturales. Reutilizan textiles para crear accesorios y sus diseños están hechos para durar.</p>
+
+					<p> Busca reducir el impacto ambiental a través de procesos de producción responsables y el uso de tintes naturales o de bajo impacto. Promueve la transparencia en su cadena de suministro y fomenta el consumo consciente.</p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8ttBzDZfm3rkYq_JHnh7Wj1PGAZf9U4HFR3zWnXPSO8DyKVyS8bzekuUvvemYidg1G1dt1dUQAxnEKCSqEUgzy2jkTSyfBJcrwxxt83oby-KDaJ-wU0cUSiDW5HdTrKLk2tKg6HDPdOPS/s1600/Manto-abrigos-moda-autor-argentina9.jpg">
+			</div>
+		</div>
+
+
+		<div class="lineal">
+			<div class="textox">
+					<h2>Religare (Colombia)</h2>
+					<h4><p>Religare utiliza algodón orgánico y fibras vegetales para crear piezas atemporales con sabiduría ancestral. Su proyecto Salvaje da nueva vida a los excedentes textiles, y sus creaciones se entregan en bolsas compostables.</p>
+
+					<p>Su nombre, que significa "religar" o "unir", refleja su objetivo de conectar a las personas con la naturaleza y la moda consciente. Trabaja con comunidades locales y artesanos, apoyando el comercio justo y la preservación de técnicas tradicionales.</p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://iconosmag.com/wp-content/uploads/2018/07/Religare-Colombiamoda-2018.jpg">
+			</div>
+		</div>
+
+
+		<div class="lineal">
+			<div class="textox">
+					<h2>eMMe (Uruguay):</h2>
+					<h4><p>eMMe ofrece una línea Zero Waste de vestidos de fiesta y novias utilizando los excedentes de tela. Experimentan con colores y detalles para crear piezas únicas y lujosas.
+
+					<p>Promueve la moda lenta y el consumo responsable, priorizando la calidad y la durabilidad de las prendas. Trabaja bajo principios de comercio justo y transparencia, asegurando condiciones laborales dignas para sus trabajadores.</p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://images.squarespace-cdn.com/content/v1/5e13a6e5028b30117510de14/1583735089795-FUUEM5ASI28PA8KDORS0/Emme+Street+Style_8722+%281%29.jpg">
+			</div>
+		</div>
+
+		<div class="lineal">
+			<div class="textox">
+					<h2>Margo Baridon (Uruguay)</h2>
+					<h4><p>Esta marca apuesta por la estética elegante y femenina utilizando materiales reciclados. Crean colecciones atemporales de alta calidad con un fuerte compromiso con el medio ambiente.</p>
+
+					<p>Busca crear prendas únicas y de alta calidad, fomentando la moda lenta y el consumo consciente. Promueve la transparencia en sus procesos y trabaja con talleres locales para garantizar condiciones laborales justas.</p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://media.fashionnetwork.com/cdn-cgi/image/format=auto/m/ce5b/9df5/c34b/0bc0/443b/13db/072a/e964/df0b/40a7/40a7.jpg">
+			</div>
+		</div>
+
+		<div class="lineal">
+			<div class="textox">
+					<h2>Slow Fashion Next (México).</h2>
+					<h4><p>Esta plataforma online reúne marcas de moda sostenible de México y Latinoamérica.</p>
+					<p>Fomenta la educación y conciencia sobre los impactos de la industria de la moda, promoviendo prácticas como el upcycling, el uso de materiales sostenibles y la producción ética. Trabaja para transformar la industria de la moda en México y Latinoamérica, apoyando a emprendedores y marcas que buscan un impacto positivo.</p>
+
+					<p><a href="https://slowfashionnext.com/">HAZ CLICK AQUÍ Y VISITA LA PÁGINA</a></p></h4>
+			</div>
+
+			<div class="imgv">
+				<img src="https://slowfashionnext.com/wp-content/uploads/2024/08/LOGO-BICOLOR-1.png">
+			</div>
+		</div>
+</div>
+
+<div class="columna">
+
+		<div class="columna">
+
+			<div class="titulos" id="conv">
+				<h3>Convocatoria de buenas prácticas para cero desechos en moda y textiles</h3>
+			</div>
+
+			<div class="textoi">
+				<h4><p>La Asamblea General de las Naciones Unidas, en su septuagésimo séptimo período de sesiones, adoptó el 14 de diciembre de 2022 la resolución “Promoción de iniciativas de residuos cero para avanzar en la Agenda 2030 para el Desarrollo Sostenible”, que proclama el 30 de marzo como el Día Internacional de Cero Desechos, que se celebrará anualmente.</p>
+
+				<p>En la resolución se invita al Programa de las Naciones Unidas para el Medio Ambiente (PNUMA) y al Programa de las Naciones Unidas para los Asentamientos Humanos (ONU-Habitat) a que faciliten la celebración del Día Internacional de Cero Desechos.</p></h4>
+			</div>
+
+		</div>
+
+		<div class="lineal">
+
+			<div class="textom">
+				<h4><p>Asimismo, se invita a todos los Estados Miembros, las organizaciones del sistema de las Naciones Unidas, otras organizaciones internacionales y regionales y otras partes interesadas pertinentes, incluida la sociedad civil, el sector privado y el mundo académico, a que celebren el Día Internacional de Cero Desechos de manera adecuada, a fin de crear conciencia sobre las iniciativas nacionales, subnacionales, regionales y locales de reducción de residuos y su contribución al logro del desarrollo sostenible.</p>
+
+				<p>Este año, el Día Internacional de Cero Desechos introduce, por primera vez, un tema central: Hacia el objetivo de cero residuos en el sector textil y de la moda. Este tema pone de relieve los desafíos ambientales y sociales que plantean el modelo de negocio lineal y las prácticas de este sector en general.</p></h4>
+			</div>
+
+			<div class="imgs">
+				<img src="https://onu-habitat.org/images/2025/ZeroWaste/Waste.jpg">
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div id="pie">
+		<h6>John Joseph Hernández Fraga on:</h6>
+
+	<div class="pline">
+
+		<div class="insta">
+			<h4><a href="https://www.instagram.com/johnephs/?igsh=MWNoa2cxYmkxaGJpbQ%3D%3D&utm_source=qr#">@johnephs on Instagram</a></h4>
+		</div>
+
+		<div class="tiktok">
+			<h4><a href="https://www.tiktok.com/@johnephs">@johnephs on TikTok</a></h4>
+		</div>
+
+		<div class="yutu">
+			<h4><a href="https://www.youtube.com/@Johnephs">@johnephs on YouTube</a></h4>
+		</div>
+
+	</div>
+
+	</div>
+
+</body>
+
+</html>
